@@ -187,7 +187,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-01-24 00:03:14" itemprop="dateModified" datetime="2024-01-24T00:03:14+00:00">2024-01-24</time>
+      <time title="Modified: 2024-01-24 00:24:03" itemprop="dateModified" datetime="2024-01-24T00:24:03+00:00">2024-01-24</time>
     </span>
 
   
@@ -201,22 +201,14 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>If you are having issues with the <code>.yml</code> file messing you up, or GitHub keep sending you emails about “!!!Running tasks FAILED” and you see a giant red sea of errors on the Actions page of your repo, it’s likely that you didn’t configure it correctly.</p>
-<h2 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h2><p>To simplify the concepts, GitHub Actions is basically a remote virtual machine owned by GitHub that they provided to everyone to run tasks on their code.</p>
-<p>Imagine people working on the same project and are constantly changing the code. If you run the entire software manually each time after someone changes one line of code, you will waste loads of man-hours. If you only run the entire software periodically, then it might take a long time to track down who broke the code.</p>
-<p>The solution to this is known as CI&#x2F;CD. For GitHub Actions, after each code change (usually each push), it will automatically follow a predetermined set of commands to:</p>
-<ul>
-<li>test whether the code looks legit (e.g., pylint)</li>
-<li>use some fake data to check whether the functions work as predicted (e.g., pytest)</li>
-<li>check whether people put api keys (similar to passwords) into public code accidentally</li>
-<li>auto build and publish websites&#x2F;pages (e.g., to github pages)</li>
-</ul>
-<h2 id="Guide"><a href="#Guide" class="headerlink" title="Guide"></a>Guide</h2><p>In the flood project, you are given a template <code>pythonapp.yml</code> file and you are requested to change a few lines to run your code properly.</p>
-<p>The most difficult part is to set up the github actions virtual machine to make sure it has an environment suitable for running your code. The template file has already set up a Python environment for you and installed some basic packages (e.g., matplotlib). You will be required to make two changes:</p>
-<ol>
-<li>(if you used other modules like <code>haversine</code>) install that with pip as well before running the code</li>
-<li>under “run deliverable 1&#x2F;2”, run the respective <code>.py</code> files after you’ve completed them</li>
-</ol>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2024/github-actions/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -270,9 +262,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2024-01-23 23:42:50 / Modified: 23:50:42" itemprop="dateCreated datePublished" datetime="2024-01-23T23:42:50+00:00">2024-01-23</time>
+      <time title="Created: 2024-01-23 23:42:50" itemprop="dateCreated datePublished" datetime="2024-01-23T23:42:50+00:00">2024-01-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-01-24 00:23:57" itemprop="dateModified" datetime="2024-01-24T00:23:57+00:00">2024-01-24</time>
     </span>
 
   
@@ -286,11 +284,14 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>If you are constantly facing the missing pip module error even after you’ve installed it multiple times, it is very likely that you are running a different python instance than the one you are installing the pip modules to.</p>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>In VS Code, press Ctrl + Shift + P, type and select <code>Python: Select Interpreter</code>. You will likely have more than one pythons (maybe in different versions) in the list that pops up. Go through the list and try each one until you can successfully run the code.</p>
-<h2 id="Root-Cause"><a href="#Root-Cause" class="headerlink" title="Root Cause"></a>Root Cause</h2><p>The root cause of this issue is a repeated installation of Python, likely because Anaconda installed one or VS Code Python extension installed one, and you installed another one manually, causing the terminal (cmd&#x2F;powershell on windows) to use the Python you installed manually, and VS Code still using the Anaconda one or the Python extension auto-installed one.</p>
-<p>The lent booster page linked on Moodle can help you debug this as well, but you might find the above solution more direct and more efficient.</p>
-<p>Another cause might just be regular venv user who have accidentally messed around too much. Don’t think that’s very common.</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2024/different-python/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -347,6 +348,13 @@
 
       <time title="Created: 2024-01-23 23:31:36" itemprop="dateCreated datePublished" datetime="2024-01-23T23:31:36+00:00">2024-01-23</time>
     </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-01-24 00:24:10" itemprop="dateModified" datetime="2024-01-24T00:24:10+00:00">2024-01-24</time>
+    </span>
 
   
 </div>
@@ -358,7 +366,10 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+          <span id="more"></span>
+
+
+<p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
